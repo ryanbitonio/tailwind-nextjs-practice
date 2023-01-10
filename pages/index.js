@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import FormQuantity from "../src/Elements/FormQuantity";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <FormQuantity />
         {/* Nested routing */}
         <Link href="./menu/items">Go to items page</Link>
         {/* Dynamic routing */}
